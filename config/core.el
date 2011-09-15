@@ -1,13 +1,15 @@
 ;;; core config
 
-(setq user-full-name "Baishampayan Ghose")
-(setq user-mail-address "bg@infinitelybeta.com")
+(setq user-full-name "Prajwalit Bhopale")
+(setq user-mail-address "prajwalit@gmail.com")
 
 (set-default-font "DejaVu Sans Mono-10")
 
 (setq-default tab-width 4
               standard-indent 4
               indent-tabs-mode nil)
+
+(defalias 'yes-or-no-p 'y-or-n-p)
 
 (require 'smooth-scrolling)
 (require 'rainbow-parens)
@@ -21,9 +23,6 @@
 (add-lib-path "tramp/lisp")
 (add-to-list 'Info-default-directory-list (concat dotfiles-lib-dir "tramp/info/"))
 (require 'tramp)
-
-(add-lib-path "magit")
-(require 'magit)
 
 (add-to-list 'auto-mode-alist '("zshrc$" . shell-script-mode))
 
