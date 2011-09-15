@@ -3,8 +3,8 @@
 ;; color-theme
 (add-lib-path "color-theme")
 (require 'color-theme)
-(load-file (concat dotfiles-lib-dir "blackbored.el"))
-(color-theme-blackbored)
+(load-file (concat dotfiles-lib-dir "zenburn.el"))
+(color-theme-zenburn)
 
 ;; set cursor colour
 (set-cursor-color "yellow")
