@@ -1,5 +1,13 @@
 ;; This is where everything starts
 
+;; Maximize emacs window
+(when (executable-find "wmctrl") ; apt-get install wmctrl
+  ;; Maximize on open
+  (defun maximize-window-toggle ()
+    (interactive)
+    (shell-command "wmctrl -r :ACTIVE: -btoggle,maximized_horz,maximized_vert"))
+  (maximize-window-toggle))
+
 ;; Create a variable to store the path to this dotfile directory
 ;; (Usually ~/.emacs.d)
 (setq dotfiles-dir (file-name-directory
