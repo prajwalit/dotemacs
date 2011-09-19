@@ -78,6 +78,11 @@
       (find-file (concat "/sudo:root@localhost:" (ido-read-file-name "File: ")))
     (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
 
+(defun recompile-init ()
+  "Byte-compile all your dotfiles again."
+  (interactive)
+  (byte-recompile-directory dotfiles-dir 0))
+
 ;;; ----------------------
 ;;; Bondage and discipline
 ;;; ----------------------
