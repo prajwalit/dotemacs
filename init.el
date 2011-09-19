@@ -51,4 +51,5 @@
 (load-config "yas")
 (load-config "bindings")
 (load-config "js2-mode")
+(load-config "js-mode")
 (load-config "magit")
