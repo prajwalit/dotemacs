@@ -52,4 +52,5 @@
 (load-config "bindings")
 (load-config "js2-mode")
 (load-config "js-mode")
+(load-config "scss-mode")
 (load-config "magit")
