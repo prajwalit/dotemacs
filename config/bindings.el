@@ -14,7 +14,7 @@
 (global-set-key "\C-xk" 'kill-current-buffer)
 (global-set-key (kbd "C-c y") 'bury-buffer)
 
-(global-set-key (kbd "C-x r") 'rgrep)
+(global-set-key (kbd "M-R") 'rgrep)
 (global-set-key (kbd "M-g") 'goto-line)
 
 ;; (global-set-key (kbd "<up>") 'punish-me)
