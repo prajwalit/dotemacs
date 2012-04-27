@@ -14,3 +14,5 @@
                           nil))))))
 
 (add-hook 'js-mode-hook 'js-mode-changes)
+
+(add-to-list 'auto-mode-alist '("\\.js$" . js-mode))

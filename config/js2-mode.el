@@ -24,6 +24,3 @@
                         (0 (progn (compose-region (match-beginning 1)
                                                   (match-end 1) "ƒ")
                                   nil)))))))
-
-
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
