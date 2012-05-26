@@ -6,15 +6,15 @@
  * This method (just) registers the module so that it can attached to a YUI instance
  * via the use method. It's executed at YUI().use(...) phase.
  */
-YUI.add("qotd-${1:moduleName}", function(Y) {
+YUI.add("$1-${2:moduleName}", function(Y) {
 
   /**
-   * @class Y.${2:namespace}
+   * @class Y.${3:namespace}
    * @example -
    *
    *
    */
-  Y.$2 = Y.Base.create ("$1", Y.Widget, [], {
+  Y.$2 = Y.Base.create ("$2", Y.Widget, [], {
 
     /**
      * BOUNDING_TEMPLATE is the outer wrapper of the widget.
@@ -27,22 +27,22 @@ YUI.add("qotd-${1:moduleName}", function(Y) {
     CONTENT_TEMPLATE: "<div></div>",
     
     /**
-     * Constructor for $2.
+     * Constructor for $3.
      */
     initializer: function (config) {
-      Y.log ("Initializing $1");
+      Y.log ("Initializing $2");
       $0
     },
     
     /**
-     * Destructor for $2.
+     * Destructor for $3.
      */
     destructor: function () {
 
     },
 
     /**
-     * Renderer function for $2.
+     * Renderer function for $3.
      * This function gets called when render() function gets executed.
      */
     renderer: function () {
@@ -52,7 +52,7 @@ YUI.add("qotd-${1:moduleName}", function(Y) {
     },
 
     /**
-     * RenderUI function for $2.
+     * RenderUI function for $3.
      * This method is responsible for creating and adding the nodes which
      * the widget needs into the document.
      */
@@ -61,7 +61,7 @@ YUI.add("qotd-${1:moduleName}", function(Y) {
     },
 
     /**
-     * BindUI function for $2.
+     * BindUI function for $3.
      * This method is responsible for attaching event listeners which bind the UI
      * to the widget state. 
      */
@@ -70,7 +70,7 @@ YUI.add("qotd-${1:moduleName}", function(Y) {
     },
 
     /**
-     * SyncUI function for $2.
+     * SyncUI function for $3.
      * This method is responsible for setting the initial state of the UI based on
      * the current state of the widget at the time of rendering.
      */
@@ -81,11 +81,11 @@ YUI.add("qotd-${1:moduleName}", function(Y) {
   }, {
 
     /**
-     * Config attributes for $2 go here.
+     * Config attributes for $3 go here.
      */
     ATTRS: {
       
     }
   });
 
-}, "0.0.1", {requires:["widget", "base-build"$3]});
+}, "0.0.1", {requires: ["widget", "base-build"$4]});

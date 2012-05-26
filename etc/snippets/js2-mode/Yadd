@@ -6,15 +6,14 @@
  * This method (just) registers the module so that it can attached to a YUI instance
  * via the use method. It's executed at YUI().use(...) phase.
  */
-YUI.add("qotd-${1:moduleName}", function(Y) {
+YUI.add ("$1-${2:moduleName}", function(Y) {
 
   /**
-   * Creates a namespace - Y.$1
+   * Creates a namespace - Y.$2
    * 
    */
-  Y.namespace("$1");
-  Y.$1 = {
+  Y.$2 = {
     $0
   };
 
-}, "0.0.1", {requires:[$2]});
+}, "0.0.1", {requires: [$3]});
