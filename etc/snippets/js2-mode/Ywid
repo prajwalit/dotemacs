@@ -14,7 +14,7 @@ YUI.add("$1-${2:moduleName}", function(Y) {
    *
    *
    */
-  Y.$2 = Y.Base.create ("$2", Y.Widget, [], {
+  Y.$3 = Y.Base.create ("$2", Y.Widget, [], {
 
     /**
      * BOUNDING_TEMPLATE is the outer wrapper of the widget.
