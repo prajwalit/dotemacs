@@ -20,6 +20,8 @@
 (global-set-key (kbd "C-c C-f") 'ido-find-file-other-window)
 (global-set-key (kbd "C-c C-b") 'ido-switch-buffer-other-window)
 
+(global-set-key (kbd "C-x SPC") 'whitespace-cleanup)
+
 ;; (global-set-key (kbd "<up>") 'punish-me)
 ;; (global-set-key (kbd "<down>") 'punish-me)
 ;; (global-set-key (kbd "<left>") 'punish-me)
