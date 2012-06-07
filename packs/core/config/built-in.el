@@ -9,6 +9,9 @@
 
 (require 'ansi-color)
 
+;; Removes white box and sound that comes in mac when you reach end of the file.
+(setq ring-bell-function 'ignore)
+
 ;;When you visit a file, point goes to the last place where it was when you previously visited
 ;;Save file is set to live-tmp-dir/places
 (require 'saveplace)
@@ -93,6 +96,11 @@
 (global-set-key (kbd "C-w") 'clipboard-kill-region)
 (global-set-key (kbd "M-w") 'clipboard-kill-ring-save)
 (global-set-key (kbd "C-y") 'clipboard-yank)
+
+(global-set-key (kbd "C-x m") 'multi-term)
+(global-set-key (kbd "C-c t") 'multi-term-next)
+(global-set-key (kbd "C-c T") 'multi-term) ;; create a new one
+
 (global-set-key (kbd "C-c y") 'bury-buffer)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
@@ -102,9 +110,19 @@
 ;; Align your code in a pretty way.
 (global-set-key (kbd "C-x \\") 'align-regexp)
 
+(global-set-key (kbd "<f5>") 'revert-all-buffers)
+
 ;; Font size
 (define-key global-map (kbd "C-+") 'text-scale-increase)
 (define-key global-map (kbd "C--") 'text-scale-decrease)
+
+(global-set-key (kbd "M-R") 'rgrep)
+(global-set-key (kbd "M-g") 'goto-line)
+
+(global-set-key (kbd "C-c C-f") 'ido-find-file-other-window)
+(global-set-key (kbd "C-c C-b") 'ido-switch-buffer-other-window)
+
+(global-set-key (kbd "C-x SPC") 'whitespace-cleanup)
 
 ;; Window switching. (C-x o goes to the next window)
 (global-set-key (kbd "C-x O") (lambda ()
