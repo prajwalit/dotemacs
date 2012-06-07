@@ -1,6 +1,0 @@
-# contributor: Prajwalit <contact@prajwalit.com>
-# name: YUI use
-# --
-YUI ().use ("node", function (Y) {
-  $0
-});

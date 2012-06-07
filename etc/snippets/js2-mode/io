@@ -1,4 +1,0 @@
-# contributor: Prajwalit <contact@prajwalit.com>
-# name: io
-# --
-"io-base", "json-parse", "querystring-stringify",$0

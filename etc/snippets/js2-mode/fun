@@ -1,6 +1,0 @@
-# contributor: Prajwalit <contact@prajwalit.com>
-# name: Function
-# --
-function ($1) {
-  $0
-}

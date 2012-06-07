@@ -1,6 +1,0 @@
-# contributor: Prajwalit <contact@prajwalit.com>
-# name: Inline JS Tag
-# --
-<script type="text/javascript">
-        $0
-</script>

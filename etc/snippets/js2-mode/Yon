@@ -1,7 +1,0 @@
-# contributor: Prajwalit <contact@prajwalit.com>
-# name: YUI on
-# --
-on ("click", function (event) {
-    event.halt ();
-    $0
-});

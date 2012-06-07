@@ -1,6 +1,0 @@
-# contributor: Prajwalit <contact@prajwalit.com>
-# name: name
-# --
-@mixin ${mixin-name}(${params}) {	
-       $0
-}
