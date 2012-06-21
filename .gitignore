@@ -1,4 +1,5 @@
 *~
 *.elc
 tmp/*
+*.DS_Store
 etc/emacs-custom.el
