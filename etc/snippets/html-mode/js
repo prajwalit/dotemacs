@@ -1,0 +1,4 @@
+# contributor: Prajwalit <contact@prajwalit.com>
+# name: External JS Script Tag
+# --
+<script type="text/javascript" src="$0"></script>
