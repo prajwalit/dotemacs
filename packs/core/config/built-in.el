@@ -119,8 +119,8 @@
 (global-set-key (kbd "M-R") 'rgrep)
 (global-set-key (kbd "M-g") 'goto-line)
 
-(global-set-key (kbd "C-c C-f") 'ido-find-file-other-window)
-(global-set-key (kbd "C-c C-b") 'ido-switch-buffer-other-window)
+(global-set-key (kbd "C-c f") 'ido-find-file-other-window)
+(global-set-key (kbd "C-c b") 'ido-switch-buffer-other-window)
 
 (global-set-key (kbd "C-x SPC") 'whitespace-cleanup)
 
