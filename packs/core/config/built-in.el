@@ -137,6 +137,9 @@
               indent-tabs-mode nil
               show-trailing-whitespace t)
 
+;; Fix mac's meta
+(setq mac-command-modifier 'meta)
+
 ;; real Emacs hackers don't use the arrow keys
 (global-unset-key [up])
 (global-unset-key [down])
