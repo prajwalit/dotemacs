@@ -104,6 +104,18 @@
 (global-set-key (kbd "C-c y") 'bury-buffer)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
+;; align on =
+(global-set-key (kbd "C-M-=")
+                (lambda (b e)
+                  (interactive "r")
+                  (align-regexp b e "\\(\\s-*\\)=" 1 1)))
+
+;; align on :
+(global-set-key (kbd "C-M-;")
+                (lambda (b e)
+                  (interactive "r")
+                  (align-regexp b e "\\(\\s-*\\):" 1 1)))
+
 ;; You know, like Readline.
 (global-set-key (kbd "C-M-h") 'backward-kill-word)
 
