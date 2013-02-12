@@ -122,7 +122,10 @@
 ;; Align your code in a pretty way.
 (global-set-key (kbd "C-x \\") 'align-regexp)
 
-(global-set-key (kbd "<f5>") 'revert-all-buffers)
+(global-set-key (kbd "<f5>") 'revert-buffer)
+
+;; Pop to last mark
+(global-set-key (kbd "M-j") 'pop-to-mark-command)
 
 ;; Font size
 (define-key global-map (kbd "C-+") 'text-scale-increase)
