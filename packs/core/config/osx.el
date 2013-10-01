@@ -31,3 +31,7 @@
 
 (global-unset-key (kbd "s-p")) ;; stupid binding
 (global-unset-key (kbd "M-TAB"))
+
+
+(setq magit-git-executable "/usr/local/bin/git"
+      vc-git-program "/usr/local/bin/git")
