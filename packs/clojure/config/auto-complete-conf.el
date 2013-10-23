@@ -2,6 +2,7 @@
 (live-add-pack-lib "auto-complete")
 (require 'auto-complete)
 (require 'auto-complete-config)
+
 (ac-config-default)
 (ac-flyspell-workaround)
 (add-to-list 'ac-dictionary-directories (concat (live-pack-lib-dir) "auto-complete/dict"))
@@ -34,19 +35,12 @@
                 html-mode
                 nxml-mode
                 sh-mode
-                clojure-mode
                 lisp-mode
                 textile-mode
                 markdown-mode
                 slime-repl-mode))
   (add-to-list 'ac-modes mode))
 
-
-;;ac-slime auto-complete plugin
-(live-add-pack-lib "ac-slime")
-(require 'ac-slime)
-(add-hook 'slime-mode-hook 'set-up-slime-ac)
-(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
 
 ;;Key triggers
 (ac-set-trigger-key "TAB")

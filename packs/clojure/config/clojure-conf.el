@@ -5,21 +5,16 @@
     'clojure-mode `(("(\\(fn\\)[\[[:space:]]"
                      (0 (progn (compose-region (match-beginning 1)
                                                (match-end 1) "λ")
-                               nil))))))
-
-(eval-after-load 'clojure-mode
-  '(font-lock-add-keywords
-    'clojure-mode `(("\\(#\\)("
+                               nil)))
+                    ("\\(#\\)("
                      (0 (progn (compose-region (match-beginning 1)
                                                (match-end 1) "ƒ")
-                               nil))))))
-
-(eval-after-load 'clojure-mode
-  '(font-lock-add-keywords
-    'clojure-mode `(("\\(#\\){"
+                               nil)))
+                    ("\\(#\\){"
                      (0 (progn (compose-region (match-beginning 1)
                                                (match-end 1) "∈")
                                nil))))))
+
 
 (eval-after-load 'find-file-in-project
   '(add-to-list 'ffip-patterns "*.clj"))
@@ -37,6 +32,9 @@
 ;;To use: M-x align-cljlet
 (live-add-pack-lib "align-cljlet")
 (require 'align-cljlet)
+
+(define-key clojure-mode-map (kbd "C-c l l") 'align-cljlet)
+(define-key clojure-mode-map (kbd "C-M-z")   'align-cljlet)
 
 ;;Treat hyphens as a word character when transposing words
 (defvar clojure-mode-with-hyphens-as-word-sep-syntax-table
