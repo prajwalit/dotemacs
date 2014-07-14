@@ -125,6 +125,6 @@
 
 
 ;; Temp org-mode init
-(add-to-list 'load-path "/Users/prajwalit/.emacs.d/packs/org-mode/")
-(setq org-directory "/Users/prajwalit/Dropbox/Org")
-(require 'org-mode-crate-init)
+;; (add-to-list 'load-path "/Users/prajwalit/.emacs.d/packs/org-mode/")
+;; (setq org-directory "/Users/prajwalit/Dropbox/")
+;; (require 'org-mode-crate-init)
