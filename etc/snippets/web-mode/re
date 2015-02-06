@@ -1,0 +1,10 @@
+# contributor: Prajwalit <contact@prajwalit.com>
+# name: React class
+# --
+React.createClass ({
+  render: function () {
+    return (
+      $0
+    );
+  }
+});

@@ -8,5 +8,6 @@
 (live-load-config-file "markdown-conf.el")
 (live-load-config-file "golang-conf.el")
 (live-load-config-file "js-conf.el")
+(live-load-config-file "web-conf.el")
 (live-load-config-file "zencoding-conf.el")
 (live-load-config-file "android-conf.el")

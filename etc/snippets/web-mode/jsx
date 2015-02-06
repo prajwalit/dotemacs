@@ -1,0 +1,4 @@
+# contributor: Prajwalit <contact@prajwalit.com>
+# name: JSX comment
+# --
+/** @jsx React.DOM */
