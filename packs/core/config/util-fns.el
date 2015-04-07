@@ -225,3 +225,12 @@ children of DIRECTORY."
 ;; (global-set-key (kbd "<down>") 'punish-me)
 ;; (global-set-key (kbd "<left>") 'punish-me)
 ;; (global-set-key (kbd "<right>") 'punish-me)
+
+
+(defun remove-whitespace-cleanup ()
+  (interactive)
+  (remove-hook 'before-save-hook 'whitespace-cleanup))
+
+(defun add-whitespace-cleanup ()
+  (interactive)
+  (add-hook 'before-save-hook 'whitespace-cleanup))
