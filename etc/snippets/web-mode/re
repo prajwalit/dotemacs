@@ -2,6 +2,10 @@
 # name: React class
 # --
 React.createClass ({
+  mixins: [PureRenderMixin],
+  propTypes: {
+
+  },
   render: function () {
     return (
       $0
