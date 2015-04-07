@@ -1,14 +1,13 @@
 (live-add-pack-lib "web")
 (require 'web-mode)
 
-
 (eval-after-load 'web-mode
   '(progn (define-key web-mode-map "{" 'paredit-open-curly)
           (define-key web-mode-map "}" 'paredit-close-curly-and-newline)
-          (setq web-mode-comment-style 2)
-          (setq web-mode-indent-style 2)
           (setq web-mode-code-indent-offset 2)
           (setq web-mode-markup-indent-offset 2)
+          (setq comment-start "//")
+          (setq comment-end "")
           (font-lock-add-keywords
            'web-mode `(("\\(function *\\)("
                         (0 (progn (compose-region (match-beginning 1)
