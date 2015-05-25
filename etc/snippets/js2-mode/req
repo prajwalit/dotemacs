@@ -1,7 +1,7 @@
 # contributor: Prajwalit <contact@prajwalit.com>
-# name: comment
+# name: req
 # --
 
-/**
- * $0
- */
+require (["$1"], function ($2) {
+  $0
+});

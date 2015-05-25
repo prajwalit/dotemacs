@@ -1,0 +1,7 @@
+# contributor: Prajwalit <contact@prajwalit.com>
+# name: req
+# --
+
+require (["$1"], function ($2) {
+  $0
+});
