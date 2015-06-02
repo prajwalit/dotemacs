@@ -17,3 +17,5 @@
 
 (when (eq system-type 'darwin)
   (live-load-config-file "osx.el"))
+
+(desktop-save-mode 1)
