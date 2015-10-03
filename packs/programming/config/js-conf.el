@@ -19,7 +19,7 @@
           ;; fixes problem with pretty function font-lock
           (define-key js2-mode-map (kbd ",") 'self-insert-command)
           (font-lock-add-keywords
-           'js2-mode `(("\\(function *\\)("
+           'js2-mode `(("\\(function\s\\)("
                         (0 (progn (compose-region (match-beginning 1)
                                                   (match-end 1) "ƒ")
                                   nil)))))))
@@ -32,11 +32,11 @@
   ;; fixes problem with pretty function font-lock
   (define-key js-mode-map (kbd ",") 'self-insert-command)
   (font-lock-add-keywords
-   'js-mode `(("\\(function *\\)("
+   'js-mode `(("\\(function\s\\)("
                (0 (progn (compose-region (match-beginning 1)
                                          (match-end 1) "ƒ")
                          nil))))))
 
 (add-hook 'js-mode-hook 'js-mode-changes)
 
-(add-to-list 'auto-mode-alist '("\\.js$" . js-mode))
+(add-to-list 'auto-mode-alist '("\\.js$" . web-mode))

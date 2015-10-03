@@ -6,10 +6,10 @@
           (define-key web-mode-map "}" 'paredit-close-curly-and-newline)
           (setq web-mode-code-indent-offset 2)
           (setq web-mode-markup-indent-offset 2)
-          (setq comment-start "//")
-          (setq comment-end "")
+          (setq web-mode-enable-auto-quoting nil)
+          (add-to-list 'web-mode-comment-formats '("javascript" . "//"))
           (font-lock-add-keywords
-           'web-mode `(("\\(function *\\)("
+           'web-mode `(("\\(function\s\\)("
                         (0 (progn (compose-region (match-beginning 1)
                                                   (match-end 1) "ƒ")
                                   nil)))))))
