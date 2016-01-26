@@ -1,0 +1,13 @@
+# contributor: Prajwalit <contact@prajwalit.com>
+# name: XHR Snippet
+# --
+xhr ({
+  route: "/xhr/$0",
+  data: {
+
+  },
+  method: "POST",
+  onSuccess: function (response) {
+
+  }
+});
